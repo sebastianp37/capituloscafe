@@ -1,0 +1,250 @@
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Aplicado a todo el cuerpo */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background-color: #60320E; /* Marrón suave */
+    padding: 1px;
+}
+
+.navbar {
+    padding: 2px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-right: 30px;
+}
+
+.nav-link {
+    color: white !important; /* Cambiado a blanco para mejor contraste */
+    margin-left: 2rem;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero */
+.hero {
+    background-image: url("./img/local.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 630px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 0 40px; /* Padding horizontal */
+}
+
+.hero-content {
+    max-width: 800px; /* Mantiene el ancho máximo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+    padding-: 10px;
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 10px;
+    background-color: #ff0000; /* Rojo */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Instagram */
+.instagram {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #60320E; /* Mantén el color que desees */
+    color: white;
+    text-align: center;
+    padding: 1rem 0; /* Aumenta el padding para mover el contenido más abajo */
+    margin-top: auto;
+}
+
+.social-buttons .btn-link {
+    color: white;
+    margin: 0 1rem;
+    padding: 0.15rem;
+}
+
+/* Estilo para la imagen de cena */
+.img-cena {
+    max-width: 300px; /* Ajusta el tamaño de la imagen de cena */
+    margin: 0 auto; /* Centra la imagen */
+    border: 5px solid white; /* Agrega un marco blanco */
+    border-radius: 10px; /* Opcional: redondea las esquinas del marco */
+}
+
+/* Estilos para el modal del formulario */
+.modal-header {
+    background-color: #60320E; /* Azul marino */
+    color: white;
+}
+
+.modal-body {
+    background-color: #fdfdfd; /* Blanco */
+}
+
+.footer {
+    background-color: #60320E; /* Mantén el color que desees */
+    color: white;
+    text-align: center;
+    padding: 2rem 0; /* Aumenta el padding para mover el contenido más abajo */
+    margin-top: auto;
+}
+
+.footer .social-buttons a {
+    color: white; /* Color de los enlaces en el footer */
+    margin: 0 0px;
+    text-decoration: none;
+}
+
+.footer .social-buttons a:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+.content-right {
+    position: relative;
+    z-index: 1;
+}
+
+.coffee-image {
+    position: relative;
+    z-index: 1;
+}
+
+.coffee-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .curved-shape {
+        clip-path: path('M 0,100 C 30,90 70,80 100,100 L 100,100 L 0,100 Z');
+    }
+}
+
+@media (max-width: 768px) {
+    .curved-shape {
+        clip-path: path('M 0,100 C 40,80 60,70 100,90 L 100,100 L 0,100 Z');
+    }
+}
+
+/* General Styles */
+.nav-link, h1, p, .read-more-btn, .copyright {
+    font-family: 'Montserrat', sans-serif; /* Asegura que todos estos elementos usen Montserrat */
+}
+
+/* Hero Section Styles */
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.read-more-btn {
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: #D4BBA3;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #60320E; /* Mantén el color que desees */
+    color: white;
+    text-align: center;
+    padding: 2rem 0; /* Aumenta el padding para mover el contenido más abajo */
+    margin-top: auto;
+}
+
+.social-buttons .btn-link {
+    color: white;
+    margin: 0 1rem;
+    padding: 0.15rem;
+}
+
+/* Alert Styles */
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Opcional: Estilos adicionales para el alert */
+.alert-success {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
