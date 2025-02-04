@@ -74,7 +74,6 @@ header {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 2rem;
-    text-transform: uppercase;
 }
 
 .hero h2 {
@@ -195,6 +194,7 @@ footer {
 
     .promo-title {
         font-size: 20px; /* Ajusta el tamaño del título en móviles */
+        font-family: 'Verah', serif;
     }
 
     .promo-discount {
@@ -221,8 +221,10 @@ footer {
 
 /* General Styles */
 .nav-link, h1, p, .read-more-btn, .copyright {
-    font-family: 'Montserrat', sans-serif; /* Asegura que todos estos elementos usen Montserrat */
+ 
 }
+
+
 
 /* Hero Section Styles */
 h1 {
@@ -230,15 +232,15 @@ h1 {
     font-weight: 800;
     line-height: 1.2;
     margin-bottom: 2rem;
-    text-transform: uppercase;
+    font-family: 'PinkCrestelle', serif; /* Nombre que usarás en CSS */
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 30px;
     font-weight: 400;
-    margin-bottom: 2.5rem;
+ 
     opacity: 0.9;
-    line-height: 1.6;
+    font-family: 'Verah', serif;
 }
 
 .read-more-btn {
@@ -299,19 +301,20 @@ p {
 
 .promo-title {
     font-size: 30px !important; /* Aumenta el tamaño de la fuente */
-    text-transform: uppercase;
     margin-bottom: 1rem;
+    font-family: 'Verah', serif;
 }
 
 .promo-discount {
     font-size: 60px !important; /* Usa !important si es necesario */
     font-weight: bold;
     margin-bottom: 1rem;
+    font-family: 'PinkCrestelle', serif; /* Aplica PinkCrestelle al texto de descuento */
 }
 
 .text-content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+    font-size: 30px;
+    
 }
 
 .content-left {
@@ -340,7 +343,10 @@ p {
     height: auto; /* Cambia a auto para que se ajuste al contenido */
     margin: 0; /* Asegúrate de que no haya margen */
     padding: 0; /* Asegúrate de que no haya padding */
+    
 }
+
+
 
 .container {
     padding: 0; /* Elimina el padding del container */
@@ -446,3 +452,28 @@ p {
 .reservation-form .btn-primary:hover {
     background-color: #4a2a0c;
 }
+
+@font-face {
+    font-family: 'Verah'; /* Nombre que usarás en CSS */
+    src: url('./fonts/Verahb__.ttf') format('truetype'); /* Ruta al archivo de la fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PinkCrestelle'; /* Nombre que usarás en CSS */
+    src: url('./fonts/PinkCrestelle-SemiBold.otf') format('opentype'); /* Ruta al archivo de la fuente */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Estilos para el texto de la oferta */
+.price-section p {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto - ajusta según sea necesario */
+}
+
+/* Aumenta el tamaño del texto de la oferta de manera específica */
+.form-section .price-section p {
+    font-size: 2rem !important; /* Ajusta el valor según lo deseado */
+}
+
