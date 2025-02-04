@@ -46,67 +46,74 @@
         <div class="hero-content">
             <h1>AMOR PROHIBIDO, CAFÉ PERMITIDO</h1>
             <p>Comparte un postre para dos corazones y vive un romance de Romeo y Julieta</p>
-            <div class="buttons">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                    data-bs-target="#reservationModal">RESERVA AQUÍ</button>
+        </div>
+    </section>
+
+    <section class="promo-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="content-left col-md-6">
+                    <div class="text-content">
+                        <h2 class="promo-title">RESERVA AHORA</h2>
+                        <p class="promo-discount">50% de descuento</p>
+                        <p>Una velada romántica que incluye: Postre para dos corazones y café, para ti y tu pareja. Un momento para recordar en un ambiente inspirado en la historia de amor más icónica de todos los tiempos.</p>
+                    </div>
+                </div>
+                <div class="content-right col-md-6">
+                    <div class="coffee-image">
+                        <img src="./img/cena.jpeg" alt="Imagen de Cena" class="img-fluid">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-
-    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="reservationModalLabel">Formulario de Reserva</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Oferta disponible desde 01 al 12 de febrero. ¡Reserva ahora y obtén tu 50% de descuento! S/240 -> S/120</p>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <form id="reservationForm">
-                                <div class="form-group">
-                                    <label for="fullName">Nombre completo:</label>
-                                    <input type="text" class="form-control" id="fullName" autocomplete="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="dni">DNI:</label>
-                                    <input type="text" class="form-control" id="dni" autocomplete="off" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="reservationDate">Fecha de reserva:</label>
-                                    <input type="date" class="form-control" id="reservationDate" autocomplete="off" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Teléfono:</label>
-                                    <input type="tel" class="form-control" id="phone" autocomplete="tel" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Correo:</label>
-                                    <input type="email" class="form-control" id="email" autocomplete="email" required>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="col-md-6">
-                            <img src="./img/cena.jpeg" alt="Imagen de Cena" class="img-fluid" style="max-width: 1000px; height: auto; width: 100%; ">
+    <section class="form-section">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-md-6 price-section">
+                    <p>Oferta disponible desde 01 al 12 de febrero. ¡Reserva ahora y obtén tu 50% de descuento!</p>
+                    <div class="price-box">
+                        <div class="price-container">
+                            <span class="original-price">S/240</span>
+                            <span class="discount-price">S/120</span>
                         </div>
                     </div>
-                    <p>Reserva ahora, con 50% de descuento, una velada romántica que incluye: Postre para dos corazones y café, para ti y tu pareja. Un momento para recordar en un ambiente inspirado en la historia de amor más icónica de todos los tiempos.</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    <button type="button" class="btn btn-primary" id="submitReservation">Enviar Reserva</button>
+                <div class="col-md-6 form-background">
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-group mb-3">
+                            <label for="fullName">Nombre completo:</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="dni">DNI:</label>
+                            <input type="text" class="form-control" id="dni" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="reservationDate">Fecha de reserva:</label>
+                            <input type="date" class="form-control" id="reservationDate" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Correo:</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar reserva</button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer class="footer">
         <div class="container text-center">
             <div class="social-buttons mb-3">
                 <a href="https://www.instagram.com/entrecapitulosycafe/" class="btn btn-link" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-                <a href="https://www.tiktok.com/@entrecapitulosycafe" class="btn btn-link target="_blank" "><i class="fab fa-tiktok fa-3x"></i></a>
+                <a href="https://www.tiktok.com/@entrecapitulosycafe" class="btn btn-link" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=61572659246260" class="btn btn-link" target="_blank"><i class="fab fa-facebook-f fa-3x"></i></a>
             </div>
             <p class="copyright">&copy; Entre Capítulos y Café. Todos los derechos reservados.</p>

@@ -1,5 +1,9 @@
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('submitReservation').addEventListener('click', function () {
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('reservationForm');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
         // Obtener los valores del formulario
         const fullName = document.getElementById('fullName').value;
         const dni = document.getElementById('dni').value;
@@ -7,21 +11,22 @@ document.addEventListener('DOMContentLoaded', function () {
         const phone = document.getElementById('phone').value;
         const email = document.getElementById('email').value;
 
-        // Aquí puedes agregar lógica para validar los campos si es necesario
-
-        // Cerrar el modal (usando Bootstrap 5)
-        const modal = new bootstrap.Modal(document.getElementById('reservationModal'));
-        modal.hide();
-
         // Mostrar el alert de SweetAlert
         Swal.fire({
             icon: 'success',
             title: '¡Reserva realizada con éxito!',
-            showConfirmButton: false,
-            timer: 3000
+            text: 'Nos pondremos en contacto contigo pronto.',
+            showConfirmButton: true,
+            confirmButtonColor: '#1B998B'
         });
 
-        // Limpiar el formulario (opcional)
-        document.getElementById('reservationForm').reset();
+        // Limpiar el formulario
+        form.reset();
+    });
+});
+
+$(document).ready(function() {
+    $('.navbar-nav a').on('click', function() {
+        $('.navbar-collapse').collapse('hide'); // Cierra el menú al hacer clic en un enlace
     });
 });
